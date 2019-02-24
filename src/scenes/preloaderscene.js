@@ -78,7 +78,11 @@ export default class PreloaderScene extends Phaser.Scene {
     });
 
     this.timedEvent = this.time.delayedCall(1000, this.ready, [], this);
-    this.load.image('logo', '../../assets/logo.png');
+
+    this.load.tilemapTiledJSON('map', 'assets/map.json');
+    this.load.spritesheet('map-tiles', 'assets/tiles.png', { frameWidth: 70, frameHeight: 70 });
+    this.load.image('coin', 'assets/coinGold.png');
+    this.load.atlas('player', 'assets/player.png', 'assets/player.json');
   }
 
   create() {
