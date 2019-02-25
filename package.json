@@ -1,7 +1,7 @@
 {
-  "name": "phaser3-project-template",
+  "name": "platformer test",
   "version": "1.0.9",
-  "description": "A Phaser 3 Project Template",
+  "description": "A Phaser 3 Platformer project test",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack",
