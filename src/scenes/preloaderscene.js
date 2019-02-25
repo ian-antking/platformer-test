@@ -83,6 +83,7 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.spritesheet('map-tiles', 'assets/tiles.png', { frameWidth: 70, frameHeight: 70 });
     this.load.image('coin', 'assets/coinGold.png');
     this.load.atlas('player', 'assets/player.png', 'assets/player.json');
+    this.load.image('logo', 'assets/logo.png');
   }
 
   create() {
