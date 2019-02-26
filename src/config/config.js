@@ -6,7 +6,7 @@ export default {
   width: 800,
   height: 600,
   physics: {
-    default: 'arcde',
+    default: 'arcade',
     arcade: {
       gravity: {
         y: 500,
