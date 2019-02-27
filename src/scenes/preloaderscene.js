@@ -12,7 +12,7 @@ export default class PreloaderScene extends Phaser.Scene {
   ready() {
     this.readyCount += 1;
     if (this.readyCount >= 2) {
-      this.scene.start('Title');
+      this.scene.start('Game');
     }
   }
 
@@ -80,7 +80,7 @@ export default class PreloaderScene extends Phaser.Scene {
     this.timedEvent = this.time.delayedCall(1000, this.ready, [], this);
 
     this.load.tilemapTiledJSON('map', 'assets/map.json');
-    this.load.spritesheet('map-tiles', 'assets/tiles.png', { frameWidth: 70, frameHeight: 70 });
+    this.load.spritesheet('tiles', 'assets/tiles.png', { frameWidth: 70, frameHeight: 70 });
     this.load.image('coin', 'assets/coinGold.png');
     this.load.atlas('player', 'assets/player.png', 'assets/player.json');
     this.load.image('logo', 'assets/logo.png');
